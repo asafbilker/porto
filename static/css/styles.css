@@ -31,7 +31,7 @@
 /* Add custom styling for the logo image */
 .navbar-brand img {
     width: auto !important; /* Adjust the width of the logo image */
-    max-height: 151px !important; /* Set a maximum height for the logo image */
+    max-height: 150px !important; /* Set a maximum height for the logo image */
 }
 
 /* Add custom styling for the navbar brand */
