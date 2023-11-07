@@ -28,16 +28,17 @@
 }
 
 /* Add custom styling for the logo image */
-.logo {
-    width: 200px;
-    height: 150px; /* Set the height of the logo image */
-    position: absolute; /* Position the logo absolutely within the navbar */
-    right: 0; /* Align the logo to the right side of the navbar */
+/* Add custom styling for the logo image */
+.navbar-brand img {
+    width: auto !important; /* Adjust the width of the logo image */
+    max-height: 151px !important; /* Set a maximum height for the logo image */
 }
 
-.logo img {
-    width: 150px; /* Adjust the width of the logo image */
-    height: auto; /* Maintain the aspect ratio of the logo image */
+/* Add custom styling for the navbar brand */
+.navbar-brand {
+    position: absolute;
+    right: 0;
+    padding: 5px 0; /* Add vertical padding */
 }
 
 /* Add custom styling for the navigation links */
@@ -160,7 +161,6 @@
     margin-bottom: 20px; /* Add space between paragraphs */
 }
 /* Add custom styles for the LinkedIn button */
-/* Add custom styles for the LinkedIn button */
 .linkedin-button {
     display: inline-flex;
     align-items: center;
@@ -177,4 +177,3 @@
 .linkedin-button:hover {
     background-color: #0056b3;
 }
-
