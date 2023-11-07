@@ -1,0 +1,32 @@
+<!-- about_myself.html -->
+{% extends 'base.html' %}
+
+{% block title %}Asaf Bilker - About Myself{% endblock %}
+
+{% block content %}
+<!-- Main content -->
+<div class="container about-myself">
+    <!-- Add the custom heading style to the "About Myself" heading -->
+    <h1 class="entry-title custom-heading page-heading"><span class="hide-title"><span>About Myself</span></span></h1>
+    <p>Hello! My name is Asaf Bilker, and I'm a software developer based in Israel. I'm passionate about creating
+        beautiful and responsive websites that provide optimal user experiences. I have experience with a range of
+        technologies including Python, Flask, HTML, CSS, and JavaScript.</p>
+
+    <p>In addition to my work as a web developer, I'm also a professional handball player, currently playing for H.C
+        Rehovot. I love the sport and have been playing it since 2016. I've also served in the intelligence section of
+        the military as an outstanding sportsman from 2016 to 2019.</p>
+
+    <p>I'm currently studying computer science at Tel Aviv University, Before I began my studies at Tel Aviv University,
+        I studied at the Open University of Israel as a student in a program called "Transfer Pathway" or "Afik Maavar".
+        I completed the program successfully, achieving a GPA of 89. I also have a background in biology, having
+        completed 5 units of biology and 5 units of English in high school.</p>
+
+    <p>I'm skilled in a variety of programming languages including Python, JavaScript, Java, C, and SQL. I'm also
+        experienced with Git, Linux, algorithm design and analysis, and data structures.</p>
+
+    <p>I'm always looking for new opportunities and challenges, and I'd love to hear from you if you think we could work
+        together. You can reach me by sending an email or connecting with me on LinkedIn,
+        here - <a href="{{ url_for('contact') }}" class="contact-button">Contact</a> . I look
+        forward to hearing from you!</p>
+</div>
+{% endblock %}

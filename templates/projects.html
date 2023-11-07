@@ -1,0 +1,32 @@
+<!-- projects.html -->
+{% extends 'base.html' %}
+
+{% block title %}Asaf Bilker - Projects{% endblock %}
+
+{% block content %}
+<!-- Main content -->
+<div class="container projects">
+    <!-- Add the custom heading style to the "Projects" heading -->
+    <h1 class="entry-title custom-heading page-heading"><span class="hide-title"><span>Projects</span></span></h1>
+
+    <!-- Project 1 -->
+    <div class="project">
+       <h2>Personal Portfolio Website (The Website You Are Currently Viewing)</h2>
+        <p>This project involved developing a personal portfolio website to showcase my skills, projects, and contact
+            information. The website you are currently viewing was created by me as a project.</p>
+        <ul>
+            <li>Implemented a responsive design using HTML, CSS, and JavaScript for a seamless user experience across
+                different devices.
+            </li>
+            <li>Developed a dynamic, data-driven back-end using Python and Flask to manage and display project
+                information.
+            </li>
+            <li>Utilized Git for version control and collaboration with other developers.</li>
+            <li>Deployed the website on a cloud platform for high availability and performance.</li>
+        </ul>
+        <div class="project-buttons">
+            <a class="btn" href="https://github.com/yourusername/yourrepository" target="_blank">GitHub Repository</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

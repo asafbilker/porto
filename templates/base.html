@@ -1,0 +1,100 @@
+<!-- base.html -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}My Portfolio{% endblock %}</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- Link to Bootstrap CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation menu -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="d-flex flex-wrap align-items-center justify-content-between">
+        <!-- Add the logo image -->
+        <div class="logo">
+            <a href="{{ url_for('home') }}" id="logo-img" class="custom-logo-link" rel="home">
+                <img class="site-logo" src="/static/img/logo.png" alt="Asaf Bilker">
+            </a>
+        </div>
+
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+                <a href="{{ url_for('home') }}"
+                   class="nav-link text-white {{ 'active' if request.endpoint == 'home' else '' }}">
+                    <i class="fa-solid fa-house me-1"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('resume') }}"
+                   class="nav-link text-white {{ 'active' if request.endpoint == 'resume' else '' }}">
+                    <i class="fa-solid fa-file-alt me-1"></i>
+                    Resume
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('projects') }}"
+                   class="nav-link text-white {{ 'active' if request.endpoint == 'projects' else '' }}">
+                    <i class="fa-solid fa-project-diagram me-1"></i>
+                    Projects
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('skills') }}"
+                   class="nav-link text-white {{ 'active' if request.endpoint == 'skills' else '' }}">
+                    <i class="fa-solid fa-lightbulb me-1"></i>
+                    Skills
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('about_myself') }}"
+                   class="nav-link text-white {{ 'active' if request.endpoint == 'about_myself' else '' }}">
+                    <i class="fa-solid fa-info-circle me-1"></i>
+                    About Myself
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('contact') }}"
+                   class="nav-link text-white {{ 'active' if request.endpoint == 'contact' else '' }}">
+                    <i class="fa-solid fa-envelope me-1"></i>
+                    Contact
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main content -->
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+<!-- Footer -->
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Created by Asaf Bilker</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <!-- Add a class to the LinkedIn icon for custom styling -->
+        <li class="ms-3 linkedin-icon">
+            <a class="text-body-secondary" href="https://www.linkedin.com/in/asaf-bilker" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+        </li>
+    </ul>
+</footer>
+
+<!-- Link to Bootstrap JS -->
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

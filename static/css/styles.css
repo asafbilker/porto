@@ -1,0 +1,180 @@
+/* styles.css */
+.nav-link.active {
+    color: #ffcc00 !important;
+}
+
+/* Add custom styling for the LinkedIn icon */
+.linkedin-icon {
+    margin-right: 40px;
+}
+
+.container {
+    min-height: calc(100vh - 56px - 76px);
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.custom-heading {
+    font-family: 'Gruppo', sans-serif;
+    font-size: 4rem;
+}
+
+/* Add custom styling for the navbar */
+.navbar {
+    height: 150px; /* Increase the height of the navbar */
+    background-color: #434950 !important; /* Set the background color of the navbar */
+}
+
+/* Add custom styling for the logo image */
+.logo {
+    width: 200px;
+    height: 150px; /* Set the height of the logo image */
+    position: absolute; /* Position the logo absolutely within the navbar */
+    right: 0; /* Align the logo to the right side of the navbar */
+}
+
+.logo img {
+    width: 150px; /* Adjust the width of the logo image */
+    height: auto; /* Maintain the aspect ratio of the logo image */
+}
+
+/* Add custom styling for the navigation links */
+.nav-link {
+    font-size: 1.5rem; /* Increase the font size of the navigation links */
+    padding: 0.5rem 1rem;
+    margin-right: 10px;
+}
+
+/* Add custom styling for the "About Myself" section */
+.about-myself {
+    padding: 20px; /* Add padding to the container */
+    margin-bottom: 20px; /* Add margin to the bottom of the container */
+    font-size: 1.2rem; /* Increase the font size */
+    line-height: 1.6; /* Increase the line height */
+}
+
+.about-myself p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
+
+/* Add custom styling for the "page-heading" class */
+.page-heading {
+    margin-top: 20px; /* Set the desired top margin */
+    margin-bottom: 20px;
+}
+
+/* Add custom styling for the "Skills" section */
+.skills {
+    padding: 20px; /* Add padding to the container */
+    margin-bottom: 20px; /* Add margin to the bottom of the container */
+    font-size: 1.2rem; /* Increase the font size */
+    line-height: 1.6; /* Increase the line height */
+}
+
+.skills h2 {
+    margin-top: 20px; /* Add space above the heading */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.skills ul {
+    list-style-type: square; /* Use square bullets for the list */
+    margin-left: 20px; /* Add left margin to the list */
+}
+
+.skills ul li {
+    margin-bottom: 10px; /* Add space below each list item */
+}
+
+/* Add custom styling for the "Projects" section */
+.projects {
+    padding: 20px; /* Add padding to the container */
+    margin-bottom: 20px; /* Add margin to the bottom of the container */
+    font-size: 1.2rem; /* Increase the font size */
+    line-height: 1.6; /* Increase the line height */
+}
+
+.projects h2 {
+    font-size: 1.5rem; /* Increase the font size for project titles */
+    margin-bottom: 10px; /* Add space below project titles */
+}
+
+.projects p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
+
+/* Add custom styling for the resume page */
+.resume-page {
+    padding: 20px; /* Add padding to the container */
+    margin-bottom: 20px; /* Add margin to the bottom of the container */
+    font-size: 1.2rem; /* Increase the font size */
+}
+
+.resume-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-download a {
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.resume-download a:hover {
+    background-color: #0056b3;
+}
+/* Add custom styling for the project buttons */
+.project-buttons {
+    margin-top: 20px;
+}
+
+.project-buttons a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.project-buttons a.btn:hover {
+    background-color: #0056b3;
+}
+/* Add custom styling for the home page */
+.home {
+    padding: 20px; /* Add padding to the container */
+    margin-bottom: 20px; /* Add margin to the bottom of the container */
+    font-size: 1.2rem; /* Increase the font size */
+    line-height: 1.6; /* Increase the line height */
+}
+
+.home p {
+    margin-bottom: 20px; /* Add space between paragraphs */
+}
+/* Add custom styles for the LinkedIn button */
+/* Add custom styles for the LinkedIn button */
+.linkedin-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    gap: 5px;
+    margin-top: 20px; /* Add some space above the LinkedIn button */
+}
+
+.linkedin-button:hover {
+    background-color: #0056b3;
+}
+

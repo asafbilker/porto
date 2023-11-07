@@ -1,0 +1,71 @@
+<!-- resume.html -->
+{% extends 'base.html' %}
+
+{% block title %}Asaf Bilker - Resume{% endblock %}
+
+{% block content %}
+<!-- Main content -->
+<article class="resume-page">
+    <!-- Resume heading -->
+    <div class="resume-heading">
+        <h1 class="entry-title custom-heading page-heading"><span class="hide-title"><span>Resume</span></span></h1>
+        <div class="resume-download">
+            <a href="{{ url_for('static', filename='documents/resume.pdf') }}" target="_blank">View Full Resume</a>
+        </div>
+    </div>
+
+    <!-- About Myself section -->
+    <h2>About Myself</h2>
+    <p>2nd year ambitious Computer Science student at Tel Aviv University with two years of experience in web development and gaming fields. Possessing excellent programming and analytical skills.</p>
+    <p>Looking for a software developer student position to contribute to the company with the skills I've acquired. Experienced in developing complete websites from scratch, including both front-end (HTML, CSS, JavaScript) and back-end (Python, Flask, Java) development. I also have experience with UI/UX design, and I'm able to create intuitive and visually appealing user interfaces.</p>
+    <p>Before I began my studies at Tel Aviv University, I studied at the Open University of Israel as a student in a program called "Transfer Pathway" or "Afik Maavar". I completed the program successfully, achieving a GPA of 89. </p>
+    <!-- Experiences section -->
+    <h2>Experiences</h2>
+    <h3>Asaf Bilker, Web Developer</h3>
+    <p>2022 – Present</p>
+    <ul>
+        <li>Developed responsive websites using Python, Flask, HTML, CSS, and JavaScript for optimal user experience.
+        </li>
+        <li>Designed user interfaces and user experiences for websites.</li>
+        <li>Troubleshot and resolved issues with a creative approach to problem-solving.</li>
+    </ul>
+
+    <h3>Rehovot, Handball Player</h3>
+    <p>2016 – Present</p>
+    <ul>
+        <li>Professional handball player currently playing for H.C Rehovot.</li>
+        <li>Developed teamwork, efficiency under high pressure, determination, and goal achievement skills.</li>
+    </ul>
+
+    <!-- Military Service section -->
+    <h3>Military Service, Intelligence section</h3>
+    <p>2016-2019</p>
+    <ul>
+        <li>Served as an Outstanding Sportsman in the intelligence section.</li>
+    </ul>
+
+    <!-- Education section -->
+    <h2>Education</h2>
+    <h3>Tel Aviv University, Computer Science</h3>
+    <p>2021 - Present</p>
+    <p>GPA - 89</p>
+    <p>Introduction to Computer Science and Java</p>
+    <p>Data Structures and Introduction to Algorithms</p>
+    <h3>׳HaAmit׳ High School, Biology</h3>
+    <p>2014 – 2017</p>
+    <p>5 Biology units 5 English units</p>
+
+    <!-- Languages section -->
+    <h2>Languages</h2>
+    <p>English - Near-native, Hebrew - Native</p>
+
+    <!-- Skills section -->
+    <h2>Skills</h2>
+    <p>Git, Linux, Algorithm Design & Analysis, Data Structures, Searching Algorithms, Sorting Algorithms, Algorithms,
+        HTML & CSS</p>
+
+    <!-- Programming Languages section -->
+    <h2>Programming Languages</h2>
+    <p>Python, JavaScript, Java, C, SQL</p>
+</article>
+{% endblock %}
