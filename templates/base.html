@@ -20,48 +20,13 @@
     <a class="navbar-brand" href="{{ url_for('home') }}">
         <img class="site-logo" src="/static/img/logo.png" alt="Asaf Bilker">
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-            <li>
-                <a href="{{ url_for('home') }}"
-                   class="nav-link text-white {{ 'active' if request.endpoint == 'home' else '' }}">
-                    <i class="fa-solid fa-house me-1"></i> Home
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('resume') }}"
-                   class="nav-link text-white {{ 'active' if request.endpoint == 'resume' else '' }}">
-                    <i class="fa-solid fa-file-alt me-1"></i> Resume
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('projects') }}"
-                   class="nav-link text-white {{ 'active' if request.endpoint == 'projects' else '' }}">
-                    <i class="fa-solid fa-project-diagram me-1"></i> Projects
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('skills') }}"
-                   class="nav-link text-white {{ 'active' if request.endpoint == 'skills' else '' }}">
-                    <i class="fa-solid fa-lightbulb me-1"></i> Skills
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('about_myself') }}"
-                   class="nav-link text-white {{ 'active' if request.endpoint == 'about_myself' else '' }}">
-                    <i class="fa-solid fa-info-circle me-1"></i> About Myself
-                </a>
-            </li>
-            <li>
-                <a href="{{ url_for('contact') }}"
-                   class="nav-link text-white {{ 'active' if request.endpoint == 'contact' else '' }}">
-                    <i class="fa-solid fa-envelope me-1"></i> Contact
-                </a>
-            </li>
+            <!-- Navigation links go here -->
         </ul>
     </div>
 </nav>
