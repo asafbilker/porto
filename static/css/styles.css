@@ -28,7 +28,6 @@
 }
 
 /* Add custom styling for the logo image */
-/* Add custom styling for the logo image */
 .navbar-brand img {
     width: auto !important; /* Adjust the width of the logo image */
     max-height: 149px !important; /* Set a maximum height for the logo image */
@@ -130,6 +129,7 @@
 .resume-download a:hover {
     background-color: #0056b3;
 }
+
 /* Add custom styling for the project buttons */
 .project-buttons {
     margin-top: 20px;
@@ -149,6 +149,7 @@
 .project-buttons a.btn:hover {
     background-color: #0056b3;
 }
+
 /* Add custom styling for the home page */
 .home {
     padding: 20px; /* Add padding to the container */
@@ -160,6 +161,7 @@
 .home p {
     margin-bottom: 20px; /* Add space between paragraphs */
 }
+
 /* Add custom styles for the LinkedIn button */
 .linkedin-button {
     display: inline-flex;
@@ -176,4 +178,16 @@
 
 .linkedin-button:hover {
     background-color: #0056b3;
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+    .navbar {
+        height: 250px; /* Increase the height of the navbar on smaller screens */
+    }
+
+    .nav-link {
+        font-size: 1rem; /* Reduce the font size of the navigation links */
+        padding: 0.25rem 0.5rem; /* Reduce the padding of the navigation links */
+    }
 }
